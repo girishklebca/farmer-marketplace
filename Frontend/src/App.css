@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+button,
+a,
+img {
+  cursor: pointer;
+}
+
+.slow-card-hover {
+  transition:
+    transform 700ms ease,
+    box-shadow 700ms ease,
+    border-color 700ms ease;
+}
+
+.slow-card-hover:hover {
+  transform: translateY(-10px);
+}
+
+.page-transition {
+  animation: page-enter 360ms ease-out both;
+}
+
+.catalog-results {
+  animation: catalog-enter 280ms ease-out both;
+}
+
+.catalog-card {
+  animation: card-enter 420ms ease-out;
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes catalog-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes card-enter {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-transition {
+    animation: none;
+  }
+
+  .catalog-results {
+    animation: none;
+  }
+
+  .catalog-card {
+    animation: none;
+  }
+}
