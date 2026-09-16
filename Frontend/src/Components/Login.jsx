@@ -25,7 +25,7 @@ const Login = () => {
             <p className="mt-16 max-w-sm text-sm font-semibold uppercase tracking-[0.2em] text-emerald-200">
               workspace
             </p>
-            <h1 className="mt-4 max-w-md text-4xl font-black leading-tight sm:text-5xl">
+            <h1 className="mt-4 max-w-md text-3xl font-black leading-tight sm:text-4xl lg:text-5xl">
               Grow the marketplace with confidence.
             </h1>
             <p className="mt-5 max-w-md text-base leading-7 text-emerald-100">
@@ -47,7 +47,9 @@ const Login = () => {
         <section className="bg-emerald-50 p-8 sm:p-12">
           <div className="mx-auto max-w-md">
             <p className="font-semibold text-orange-600">Welcome back</p>
-            <h2 className="mt-2 text-3xl font-black text-slate-950">Hello,</h2>
+            <h2 className="mt-2 text-2xl font-black text-slate-950 sm:text-3xl">
+              Hello,
+            </h2>
             <p className="mt-3 text-sm leading-6 text-slate-500">
               Sign in, to open your FreshFarm account.
             </p>
@@ -125,7 +127,7 @@ const Login = () => {
         </section>
       </div>
       {showToast && (
-        <div className="fixed right-6 top-6 z-30 rounded-xl bg-emerald-700 px-5 py-3 text-sm font-bold text-white shadow-lg shadow-emerald-900/20">
+        <div className="fixed left-4 right-4 top-4 z-30 rounded-xl bg-emerald-700 px-4 py-3 text-center text-sm font-bold text-white shadow-lg shadow-emerald-900/20 sm:left-auto sm:right-6 sm:top-6 sm:px-5">
           Welcome, Admin!
         </div>
       )}
