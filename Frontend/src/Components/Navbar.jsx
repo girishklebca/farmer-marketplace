@@ -47,7 +47,7 @@ const Navbar = () => {
         to="/login"
         className="cursor-pointer rounded-full bg-emerald-700 px-3 py-2 text-xs font-semibold text-white hover:bg-emerald-800 sm:px-5 sm:py-2.5 sm:text-sm"
       >
-        <span aria-hidden="true">👤</span> Profile
+        <span aria-hidden="true"> Profile</span>
       </Link>
       {menuOpen && (
         <>
